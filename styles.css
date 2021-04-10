@@ -520,11 +520,7 @@ div.footer h6 {
 @media screen and (max-width: 576px) {
     div.logo {
         font-size: 2rem;
-        margin-left: -4rem;
-    }
-
-    ul li {
-        margin: 0.3rem 0 0 5rem;
+        padding: 1rem 0 0.5rem 2rem;
     }
 
     div.hero-section {
