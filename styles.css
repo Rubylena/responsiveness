@@ -40,13 +40,13 @@ ul li a {
     text-decoration: none;
     color: #88949B;
     padding: 0.5vw;
-}
+} 
 
 ul li a:hover {
     color: #304353;
     background: #fff;
     padding: 0.5rem;
-}
+} 
 
 div.hero-section {
     background: #304353;
@@ -351,31 +351,58 @@ div.footer h6 {
 }
 
 @media screen and (max-width: 768px) {
-    div.logo {
-        font-size: 2rem;
-        margin-left: -4rem;
-    }
 
+    div.nav-bar {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+    }
+   
     ul.nav-links {
+        display: block;
         display: none;
     }
+    
+   div.logo {
+        padding: 1rem 0 0.5rem 2rem;
+        font-size: 2rem;
+    }
 
-    .menu-bar {
-        display: flex;
+    .menu-bar{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
         text-decoration: none;
         color: #88949B;
-        margin-right: -3rem;
+        font-size: 35px;
+        margin: 1.2rem 1rem;
+        padding: 0 0.8rem;
     }
 
+    .menu-bar:hover{
+        color: #304353;
+        background-color: #88949B;
+    }
+    
     ul li {
-        margin: 0.5rem 0 0 13rem;
-        list-style: none;
+        margin: 0;
+        padding: 0 0 0.5rem 2rem;
         font-size: 1.1rem;
     }
-
-    ul li a:hover {
-        padding: 0.3rem;
-        border-radius: 5px;
+    ul li a{
+        display: block;
+    }
+    ul li a:hover{
+        color: #88949B;
+        background: #fff;
+        padding: 0;  
+    }
+    ul li:hover {
+        background-color: #fff;
+        border-radius: 2px;
+        padding: 0.8rem 2rem;
     }
 
     div.hero-section {
